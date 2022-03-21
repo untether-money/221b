@@ -49,7 +49,7 @@ const QuizResult = (props) => {
       <Center>
       <Heading
       m={5}
-      bgGradient="linear(to-r, blue.200, green.500)"
+      colorscheme="red"
       bgClip="text"
       size="lg"
       >

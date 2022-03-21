@@ -3,30 +3,29 @@ import { Flex, Spacer, Box, useColorMode, Button, Heading, Divider } from '@chak
 import { SunIcon, StarIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 import theme from '../theme';
-
+var Image = require('../images/Turito-logo.png')
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <Flex m={4}>
      <Link to={{ pathname: '/' }}>
     <Heading
-      bgGradient="linear(to-r, blue.200, green.500)"
-      bgClip="text"
+      colorScheme="red"
       size="2xl"
       sx={{":hover": {cursor: "pointer"}}}
     >
-    221B x Turito
+    <img src={Image} />
     </Heading>
     </Link>
       <Spacer />
       <Box mr="2">
       <Link to={{ pathname: '/admin' }}>
-      <Button colorScheme="dark"></Button>
+      <Button colorScheme="black"></Button>
       </Link>
       </Box>
       <Box>
-      <Button onClick={toggleColorMode} colorScheme="teal">
-          { colorMode === 'dark' ? <SunIcon /> : <StarIcon /> }
+      <Button onClick={toggleColorMode} colorScheme="red">
+          { colorMode === 'black' ? <SunIcon /> : <StarIcon /> }
       </Button>
       </Box>
     </Flex>

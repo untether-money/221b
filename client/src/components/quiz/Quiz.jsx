@@ -41,8 +41,7 @@ const Quiz = (props) => {
         <Box m={4}>
         <Center>
         <Text
-          bgGradient="linear(to-r, blue.200, green.500)"
-          bgClip="text"
+          colorscheme="red"
           fontSize="3xl"
           fontWeight="extrabold"
         >

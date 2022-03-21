@@ -62,7 +62,7 @@ const ShareResult = (props) => {
 
   return (
     <Box m={5}>
-      <Button onClick={onOpen} isDisabled={isSubmit?true:false} colorScheme="teal">Submit my result</Button>
+      <Button onClick={onOpen} isDisabled={isSubmit?true:false} colorScheme="red">Submit my result</Button>
 
       <Modal
         initialFocusRef={initialRef}
@@ -94,7 +94,7 @@ const ShareResult = (props) => {
           </FormControl>
           </ModalBody>
           <ModalFooter>
-            <Button type="submit" onClick={handleSubmit} colorScheme="teal" mr={3}>
+            <Button type="submit" onClick={handleSubmit} colorScheme="red" mr={3}>
               Submit
             </Button>
             <Button onClick={onClose}>Cancel</Button>
