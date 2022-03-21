@@ -17,12 +17,16 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           }
         }
+      },
+      {
+        test: /\.png$/,
+        type: 'asset/resource'
       }
     ]
   },
   devtool: 'inline-source-map',
   mode: 'development',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx','.png']
   },
 };
